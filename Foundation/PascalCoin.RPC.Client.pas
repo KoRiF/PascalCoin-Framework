@@ -84,7 +84,7 @@ Begin
     lParams := TJSONObject.Create;
     For lParam In AParams Do
     Begin
-      lParams.AddPair(lParam.Key, lParam.Value);
+      lParams.AddPair(lParam.Key, String(lParam.Value));
     End;
 
     lObj.AddPair('params', lParams);
